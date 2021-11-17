@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar";
 import SummaryView from "./components/summaryView";
 import ListView from "./components/listView";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const App = () => {
   return (

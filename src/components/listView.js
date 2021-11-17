@@ -8,6 +8,7 @@ const ListView = () => {
       .then((data) => setState(data))
       .catch((err) => console.log(err));
   });
+  console.log(state);
   return (
     <div>
       <h1>List View here!</h1>
