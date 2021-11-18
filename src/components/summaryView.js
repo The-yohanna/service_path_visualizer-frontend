@@ -15,13 +15,22 @@ const SummaryView = () => {
   console.log(paths);
   return (
     <div>
-      <h1>Summary Views here!</h1>
       <Container>
         <Row className="summ-row">
           {(paths || []).map((item, k) => (
             <Col key={k} xs={12} md={4} lg={3} className="path-col">
               <Card className="path-card">
-                <Card.Body className="path-cardbd">
+                <Card.Body
+                  className="path-cardbd"
+                  style={{
+                    backgroundColor:
+                      item.state === 1
+                        ? "green"
+                        : item.state === -1
+                        ? "red"
+                        : "grey",
+                  }}
+                >
                   <Card.Text>{item.name}</Card.Text>
                 </Card.Body>
               </Card>
