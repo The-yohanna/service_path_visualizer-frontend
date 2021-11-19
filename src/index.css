@@ -21,10 +21,35 @@ code {
 .path-cardbd {
   color: white;
 }
+
+.pathlist-card {
+  width: 160px;
+  height: 100px;
+}
+
 .summ-row {
   padding: 10px;
 }
 
-.path-col {
+.path-col,
+.node-col {
   padding: 20px;
+}
+
+.node-card {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.node-cardbd {
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  display: flex; /* or inline-flex */
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  padding: 10px;
 }
